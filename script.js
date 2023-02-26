@@ -7,7 +7,7 @@ function upload() {
     var seconds = data.getSeconds()
     var fullHours = [hour, minutes, seconds].join(":")
 
-    msg.innerHTML = `Today is ${data.toLocaleDateString("pt-BR")}<br>`
+    msg.innerHTML = `Today is ${data.toLocaleDateString("en-US")}<br>`
     msg.innerHTML += `Now it's ${fullHours}`
 
     if (fullHours >= 0 && fullHours < 12) {
