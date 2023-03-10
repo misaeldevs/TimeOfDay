@@ -16,7 +16,7 @@ function upload() {
     } else if (fullHours >= 12 && fullHhours <= 18) {
         img.src = "fototarde.png"
         document.body.style.background = "#f48747"
-    } else {
+    } else if (fullHours > 18 && fullHhours < 0) {
         img.src = "fotonoite.png"
         document.body.style.background = "#2b3331"
     }
